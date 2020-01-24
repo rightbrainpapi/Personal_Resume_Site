@@ -55,13 +55,11 @@ margin: 50px auto;
 }
 
 .resume .resume_left .bold{
-  
-    color:  #2d999b; 
+    color:  #212022;
 }
 
 .resume .resume_left .regular{
-    color: #fff;
-    color: #8CAFD1;
+     color:  #2d999b; 
 }
 
 .resume .resume_item{
@@ -86,8 +84,8 @@ margin: 50px auto;
 .resume .resume_left ul li .icon{
     width:35px;
     height: 35px;
-    background: #fff;
-    color: #8CAFD1;
+    background:  #8CAFD1;
+    color:  #212022;
     border-radius: 50%;
     margin-right: 15px;
     font-size: 16px;
@@ -102,7 +100,16 @@ margin: 50px auto;
 }
 
 .resume .resume_left ul li .data{
-    color: #8CAFD1;
+    color:  #212022;
+}
+
+.resume .resume_left .resume_skills ul li{
+    color:  #212022;
+    justify-content: space-between;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name{
+    width: 25%;
 }
 
 /* 
