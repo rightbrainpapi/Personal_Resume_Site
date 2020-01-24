@@ -19,8 +19,23 @@ body{
     font-size: 20px;
     text-transform: uppercase;
 }
-
-#myProfile{
-    height: 25%;
-    width: 25%;
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
 }
+
+.resume{
+width: 800px;
+height:auto;
+display:flex;
+margin: 50px auto;
+}
+.resume .resume_left{
+    width: 280px;
+    background: #0bb5f4;
+}
+
+/* #myProfile{
+    height: auto;
+    width: 50%;
+} */
