@@ -116,9 +116,6 @@ margin: 50px auto;
     width: 60%;
     margin: 0 5px;
     height: 5px;
-    background: #2d999b; 
-    background: #212022;
-    background: #fff;
     background: #585c68;
     position: relative;
 }
@@ -131,7 +128,6 @@ margin: 50px auto;
     top: 0;
     left: 0;
     height: 100%;
-    background: #fff;
     background:  #2d999b; 
 }
 
