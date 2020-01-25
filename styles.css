@@ -67,7 +67,8 @@ margin: 50px auto;
     border-bottom: 2px solid #8CAFD1; 
 }
 
-.resume .resume_left .resume_item:last-child{
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child{
     border-bottom: 0px;
 }
 
@@ -92,7 +93,8 @@ margin: 50px auto;
     position: relative;
 
 }
-.resume .icon i {
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -185,9 +187,46 @@ Left: -21px;
 width: 2px;
 height: 115px;
 background:  #2d999b;
+}
 
+.resume .resume_right .resume_hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li{
+   width: 80px;
+   height: 80px;
+   border: 2px solid #2d999b;
+   border-radius: 50%;
+   position: relative;
+   color:  #212022;;
+   color: #2d999b;
+
+   
 
 }
+
+.resume .resume_right .resume_hobby ul li i{
+    font-size: 30px
+ }
+
+ .resume .resume_right .resume_hobby ul li:before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: -49px;
+    width: 49px;
+    height: 2px;
+    background:  #2d999b;
+ }
+
+ .resume .resume_right .resume_hobby ul li:last-child:before{
+    display: none;
+ }
+
+
+/* .resume .resume_right .resume_hobby ul */
 
 /* 
 #myProfile{
