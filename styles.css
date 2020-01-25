@@ -170,10 +170,23 @@ margin: 50px auto;
     position: absolute;
     top: 5px;
     left: -25px;
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     border: 2px solid  #2d999b; 
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after{
+content: "";
+position: absolute;
+top: 14px;
+Left: -21px;
+width: 2px;
+height: 115px;
+background:  #2d999b;
+
+
 }
 
 /* 
