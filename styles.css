@@ -25,7 +25,7 @@ body{
 }
 
 .resume{
-width: 800px;
+width: 900px;
 height:auto;
 display:flex;
 margin: 50px auto;
@@ -131,6 +131,7 @@ margin: 50px auto;
 }
 .resume .resume_right{
     width: 520px;
+    /* width: 800px; */
     background: #fff;
     padding: 25px;
 }
