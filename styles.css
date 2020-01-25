@@ -35,12 +35,6 @@ margin: 50px auto;
     background: #a2f0f1; 
 }
 
-/* .resume .resume_left .resume_profile{
-    width: 100%;
-    height: 280px;
-
-} */
-
 .resume .resume_left .resume_profile img{
     width: 100%;
     height: 100%;   
@@ -225,11 +219,34 @@ background:  #2d999b;
     display: none;
  }
 
+ /* Making Work & Edu Sections Scrollable */
 
-/* .resume .resume_right .resume_hobby ul */
+ #work::-webkit-scrollbar,
+ #edu::-webkit-scrollbar{
+    display: none;
+  }
+#work, #edu{
+    /* background: yellow; */
+    /* border: 3px solid black; */
+    /* border-radius: 10%; */
+    /* padding: 10px; */
+    width: 100%;
+    height: 230px;
+    overflow: auto;
+    -ms-overflow-style: none;
+}
 
-/* 
-#myProfile{
-    height: auto;
-    width: 50%;
-} */
+
+#work:hover,
+#edu:hover{ 
+    animation: shake 275ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(.5deg); }
+    50% { transform: rotate(-.5deg); }
+    100% { transform: rotate(0.5deg); }
+  }
+ 
