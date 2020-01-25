@@ -251,3 +251,5 @@ background:  #2d999b;
     100% { transform: rotate(0.5deg); }
   }
  
+.link{color:#555555;}
+.link:hover { color: #2d999b;; }
