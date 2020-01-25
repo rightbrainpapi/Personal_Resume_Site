@@ -77,22 +77,25 @@ margin: 50px auto;
 }
 
 .resume .resume_left ul li .icon{
-    width:35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background:  #8CAFD1;
-    color:  #212022;
+    color:  #212022; 
     border-radius: 50%;
     margin-right: 15px;
     font-size: 16px;
     position: relative;
 
 }
+
+/* Stylings of All Icons on Page */
 .resume .icon img,
 .resume .resume_right .resume_hobby ul li img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* width: 50%; */
 }
 
 .resume .resume_left ul li .data{
@@ -157,7 +160,7 @@ margin: 50px auto;
 }
 
 .resume .resume_right ul li:last-child .info{
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .resume .resume_right .resume_work ul li:before,
@@ -196,9 +199,6 @@ background:  #2d999b;
    position: relative;
    color:  #212022;
    /* color: #2d999b; */
-
-   
-
 }
 
 .resume .resume_right .resume_hobby ul li i{
