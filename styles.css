@@ -146,8 +146,35 @@ margin: 50px auto;
     overflow: hidden;
 }
 
+.resume .resume_right  ul li{
+    position: relative;
+}
 
+.resume .resume_right ul li .date{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
 
+.resume .resume_right ul li .info{
+    margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info{
+    margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid  #2d999b; 
+}
 
 /* 
 #myProfile{
