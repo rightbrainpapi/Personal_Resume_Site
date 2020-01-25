@@ -130,6 +130,24 @@ margin: 50px auto;
     height: 100%;
     background:  #2d999b; 
 }
+.resume .resume_right{
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+
+.resume .resume_right .bold{
+  color: #2d999b; 
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+
+
 
 /* 
 #myProfile{
