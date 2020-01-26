@@ -3,17 +3,18 @@ var x = document.getElementsByClassName("content");
 (function (){ 
     // Function Logic Here.
     console.log("We are here") 
-    fadeDivInAndOut()
+    // fadeDivInAndOut()
     })();
 
 
-// if (document.querySelector(".box").style.display == 'block') { 
-//     alert('this Element is block'); 
-//   }
+if (document.querySelector(".box").style.display == 'block') { 
+    alert('this Element is block'); 
+  }
 
 
 function scrollUp() {
     // togglingDiv() 
+    console.log("we in")
     var elem = document.getElementById("myAnimation");   
     var pos = 100;
     var id = setInterval(frame,5);
@@ -83,6 +84,10 @@ function scrollUp() {
 
 
  // 
+
+
+
+
  function fadeDivInAndOut() {
   
     if (box.classList.contains('hidden')) {
