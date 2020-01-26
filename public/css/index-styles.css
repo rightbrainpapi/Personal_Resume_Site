@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    overflow-y: none;
+    overflow-style: none;
   }
   .logocon {
     display: flex;
