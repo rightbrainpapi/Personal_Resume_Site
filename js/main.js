@@ -4,6 +4,10 @@
 //     console.log("We are here") 
 //     // fadeDivInAndOut()
 //     })();
+var hint = document.getElementById('hinter');
+
+
+
 
 function scrollUp() {
     // togglingDiv() 
@@ -23,7 +27,8 @@ function scrollUp() {
 
 // Toggle the Resume Visibility
     resumeFader();
-    enterFader()
+    // enterFader()
+    closeFader(hint);
 
 
   }
@@ -91,11 +96,27 @@ function scrollUp() {
 //////////////resumeFader//////////////
 ///////////////////////////////////////
 ///////////////////////////////////////
-function enterFader() {
+// function enterFader() {
+//     console.log("We Are in the EnterFader")
+//    var hint = document.getElementById('hinter');
+//     hint.classList.toggle('close');
+//     console.log('even fired!');
+// }
+
+
+
+// ///////////////////////////////////////
+// var hint = document.getElementById('hinter');
+
+function closeFader(ele){
     console.log("We Are in the EnterFader")
-   var hint = document.getElementById('hinter');
-    hint.classList.toggle('close');
+   
+    ele.classList.toggle('close');
     console.log('even fired!');
 }
+
+
+
+
 
 
