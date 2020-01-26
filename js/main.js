@@ -1,17 +1,19 @@
 
-// var x = document.getElementsByClassName("content");
+var x = document.getElementsByClassName("content");
 (function (){ 
     // Function Logic Here.
     console.log("We are here") 
-    togglingDiv()
+    fadeDivInAndOut()
     })();
 
 
- 
+// if (document.querySelector(".box").style.display == 'block') { 
+//     alert('this Element is block'); 
+//   }
 
 
 function scrollUp() {
-    togglingDiv() 
+    // togglingDiv() 
     var elem = document.getElementById("myAnimation");   
     var pos = 100;
     var id = setInterval(frame,5);
@@ -25,10 +27,16 @@ function scrollUp() {
       //   elem.style.height = pos + 'vh'; 
       }
     }
+
+   
+    fadeDivInAndOut()
+
+
+
   }
 
   function closering() {
-    togglingDiv() 
+    // togglingDiv() 
     var elem = document.getElementById("myAnimation");   
     var pos = 0;
     var id = setInterval(frame, 10);
@@ -41,6 +49,9 @@ function scrollUp() {
         elem.style.height = pos + '%'; 
       }
     }
+
+
+    fadeDivInAndOut()
   }
 
 
@@ -71,17 +82,25 @@ function scrollUp() {
 //          [] return
 
 
-
-
-  function togglingDiv() {
-    var x = document.querySelector(".content")
-    if (x.style.display === "none") {
-      x.style.display = "block";
+ // 
+ function fadeDivInAndOut() {
+  
+    if (box.classList.contains('hidden')) {
+      box.classList.remove('hidden');
+      box.style.display === 'block'
+      setTimeout(function () {
+        box.classList.remove('visuallyhidden');
+      }, 20);
     } else {
-      x.style.display = "none";
+      box.classList.add('visuallyhidden');    
+      box.addEventListener('transitionend', function(e) {
+        box.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
     }
   }
-  var element = document.querySelector('.content');
-  alert(element.offsetHeight + "px");
 
 

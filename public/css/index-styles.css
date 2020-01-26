@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    overflow-style: none;
+    overflow-y: none;
   }
   /* #myContainer {
     width: 400vw;
@@ -33,6 +33,8 @@ body {
     top: 0;
     z-index: 3;
   }
+
+  
   .logo {
     font: 300 150px Comfortaa;
     color: #fff;
@@ -47,16 +49,55 @@ body {
     color: rgba(255,255,255,0.6);
     font: 300 30px Comfortaa;
   }
+
+
+  .box {
+      z-index: -1;
+    background: goldenrod;
+    width: 300px;
+    /* height: 300px; */
+    margin: 30px auto;
+    transition: all 1s linear;
+    display: block;
+
+    padding: 30px;
+    position: relative;
+    position: fixed;
+    top: 30vh;
+    height: 200px;
+    font: 16px Ubuntu;
+    z-index: -7;
+    /* display: none; */
+
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .show{
+    display: block;
+  }
+  
+  .visuallyhidden {
+    opacity: 0;
+  }
+  
+
+
+
+
+
+/* 
   .content {
     padding: 30px;
     position: relative;
     top: 20vh;
     height: 200px;
     font: 16px Ubuntu;
-    /* display: block; */
-    /* background-color: white; */
-    /* z-index: -1; */
-  }
+    display: block;
+ 
+  } */
   @-moz-keyframes color {
     0% {
       background: #e61919;
