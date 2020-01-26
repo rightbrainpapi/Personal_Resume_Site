@@ -30,8 +30,8 @@ function scrollUp() {
     }
 
    
-    fadeDivInAndOut()
-
+    // fadeDivInAndOut()
+    toggleEntrance();
 
 
   }
@@ -52,7 +52,7 @@ function scrollUp() {
     }
 
 
-    fadeDivInAndOut()
+    toggleEntrance();
   }
 
 
@@ -85,27 +85,11 @@ function scrollUp() {
 
  // 
 
-
-
-
- function fadeDivInAndOut() {
-  
-    if (box.classList.contains('hidden')) {
-      box.classList.remove('hidden');
-      box.style.display === 'block'
-      setTimeout(function () {
-        box.classList.remove('visuallyhidden');
-      }, 20);
-    } else {
-      box.classList.add('visuallyhidden');    
-      box.addEventListener('transitionend', function(e) {
-        box.classList.add('hidden');
-      }, {
-        capture: false,
-        once: true,
-        passive: false
-      });
-    }
+  function toggleEntrance() {
+      console.log("something new")
+     var box = document.getElementById('box');
+      box.classList.toggle('open');
+      console.log('even fired!');
   }
 
 
