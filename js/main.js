@@ -1,5 +1,5 @@
 
-var x = document.getElementsByClassName("content");
+// var x = document.getElementsByClassName("content");
 // (function (){ 
 //     // Function Logic Here.
 //     console.log("We are here") 
@@ -19,7 +19,7 @@ function scrollUp() {
     var pos = 100;
     var id = setInterval(frame,5);
     function frame() {
-      if (pos == 30) {
+      if (pos == 10) {
         clearInterval(id);
       } 
       else {
@@ -81,9 +81,11 @@ function scrollUp() {
 //              element.style.height = pos + '%'
 //          [] return
 
-
- // 
-
+///////////////////////////////////////
+///////////////////////////////////////
+//////////////resumeFader//////////////
+///////////////////////////////////////
+///////////////////////////////////////
   function resumeFader() {
       console.log("something new")
      var box = document.getElementById('boxer');
