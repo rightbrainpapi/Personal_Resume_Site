@@ -53,6 +53,8 @@ body {
     top: 20vh;
     height: 200vh;
     font: 16px Ubuntu;
+    /* background-color: white; */
+    /* z-index: -1; */
   }
   @-moz-keyframes color {
     0% {
