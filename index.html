@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,92 @@
 </head>
 <body >
     <h1><a href="resume.html">Hello World</a></h1>
-    <!--cover w/ skrollr values (for example data-100 for styles at 100 pixels scroled)-->
-    <div class="logocon" data-0="height: 100vh; opacity: 1" data-99="height: 10vh; opacity: .85" data-100="height: 50px">
-        <div class="logo" data-0="font-size: 150px" data-100="font-size: 32px">RightBrainPapi</div>
+    <div class="logocon"  data-0="height: 100vh; opacity: 1" data-99="height: 10vh; opacity: .85" data-100="height: 50px">
+        <div class="logo" data-0="font-size: 150px" data-100="font-size: 32px" >RightBrainPapi</div>
     </div>
-    <div class="hint" data-0="bottom: 10vh" data-100="bottom: -25px">scroll down</div>
-    <!--page contents below-->
+    <div class="hint" data-0="bottom: 10vh" data-100="bottom: -25px" onclick="myMove()">scroll down</div>
     <div class="content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Beatae nulla dolor quam nesciunt sapiente obcaecati!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Beatae nulla dolor quam nesciunt sapiente obcaecati!
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <script src="./js/main.js"></script>
 </body>
+</html> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RightBrainPapi</title>
+    <link rel="shortcut icon" type="image/png" href="./public/assets/icons/fav-icon.png">
+    <link rel="stylesheet" href="./public/css/index-styles.css">
+</head>
+<!-- <style>
+    #myContainer {
+      width: 400vw;
+      height: 400vh;
+      position: relative;
+      background: yellow;
+    }
+    #myAnimation {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      background-color: red;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    </style> -->
+    <body>
+    
+    
+    
+    <div id ="myContainer">
+    <div id ="myAnimation">
+    
+        <h1 class="logo">
+            Right<strong style="color:green;" onclick="myMove()">Brain</strong style="color:green;">Papi
+        </h1>
+            
+        <div class="hint" onclick="myMove()">scroll down</div>
+       
+    </div>
+    </div>
+    
+    <!-- <script>
+    function myMove() {
+      var elem = document.getElementById("myAnimation");   
+      var pos = 100;
+      var id = setInterval(frame,5);
+      function frame() {
+        if (pos == 30) {
+          clearInterval(id);
+        } 
+        else {
+          pos--; 
+          elem.style.height = pos + 'vh'; 
+        //   elem.style.height = pos + 'vh'; 
+        }
+      }
+    }
+    </script> -->
+     <script src="./js/main.js"></script>
+    </body>
 </html>
+
+

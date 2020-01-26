@@ -2,10 +2,28 @@ body {
     overflow-x: hidden;
     overflow-style: none;
   }
-  .logocon {
+  /* #myContainer {
+    width: 400vw;
+    height: 400vh;
+    position: relative;
+    background: yellow;
+  } */
+  /* #myAnimation {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: red;
+    align-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
+  } */
+  
+  #myAnimation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background: #e61919;
