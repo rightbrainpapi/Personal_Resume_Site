@@ -300,3 +300,16 @@ display: none;
  
 .link{color:#555555;}
 .link:hover { color: #2d999b;; }
+
+/* //////////////////////////////////// */
+/* ///// Header & footer Styling /// */
+/* //////////////////////////////////// */
+
+.headerContainer, .footerContainer{
+    /* background: #a2f0f1;  */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    color: #a2f0f1;
+}
