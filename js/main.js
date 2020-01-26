@@ -1,16 +1,9 @@
-
-// var x = document.getElementsByClassName("content");
+// IFFY Function
 // (function (){ 
 //     // Function Logic Here.
 //     console.log("We are here") 
 //     // fadeDivInAndOut()
 //     })();
-
-
-// if (document.querySelector(".box").style.display == 'block') { 
-//     alert('this Element is block'); 
-//   }
-
 
 function scrollUp() {
     // togglingDiv() 
@@ -24,19 +17,18 @@ function scrollUp() {
       } 
       else {
         pos--; 
-        elem.style.height = pos + 'vh'; 
-      //   elem.style.height = pos + 'vh'; 
+        elem.style.height = pos + 'vh';
       }
     }
 
 // Toggle the Resume Visibility
     resumeFader();
+    enterFader()
 
 
   }
 
   function closering() {
-    // togglingDiv() 
     var elem = document.getElementById("myAnimation");   
     var pos = 0;
     var id = setInterval(frame, 10);
@@ -92,5 +84,18 @@ function scrollUp() {
       box.classList.toggle('open');
       console.log('even fired!');
   }
+
+
+///////////////////////////////////////
+///////////////////////////////////////
+//////////////resumeFader//////////////
+///////////////////////////////////////
+///////////////////////////////////////
+function enterFader() {
+    console.log("We Are in the EnterFader")
+   var hint = document.getElementById('hinter');
+    hint.classList.toggle('close');
+    console.log('even fired!');
+}
 
 

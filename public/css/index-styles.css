@@ -105,10 +105,20 @@ body{
     color: rgba(255,255,255,0.7);
     font: 300 30px Comfortaa;
     /* color: teal; */
+
+    opacity: 1;
+    visibility: visible;
+    transition: all 3000ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
+    /* position: relative; */
+  }
+
+  .hint.close{
+    opacity: 0;
+    visibility: hidden;
   }
 
 
-  .box {
+  /* .box {
     background: goldenrod;
     margin: 30px auto;
     opacity: 0;
@@ -117,32 +127,12 @@ body{
     position: relative;
     top: 26vh;
     height: 200px;
-    height: auto;
-
-
-    
-  
-  
-    /* background: goldenrod;
-   width: 300px;
- 
-   margin: 30px auto;
-   transition: all 1s linear;
-   display: block;
-
-   padding: 30px;
-   position: relative;
-   top: 30vh;
-   height: 200px;
-   font: 16px Ubuntu; */
-  
-  
+    height: auto;  
 }
 .box.open {
     opacity: 1;
     visibility: visible;
-    /* top: 0; */
-}
+} */
 
 
 
@@ -426,10 +416,6 @@ height: 115px;
 background:  #2d999b;
 }
 
-
-
-
-
 /* Sub Bullet Point: Circle*/
 .resume .resume_right .resume_work div ul li div ul li:before,
 .resume .resume_right .resume_education div ul li div ul li:before{
@@ -443,25 +429,11 @@ background:  #2d999b;
     border: 2px solid  #2d999b; 
 }
 
-
 /* Remove last line from after last child */
 .resume .resume_right .resume_work .bullets_point:last-child:after,
 .resume .resume_right .resume_education .bullets_point:last-child:after{
     display: none;
  }
-
-/* Sub Bullet Point: Lines*/
-/* .resume .resume_right .resume_work  .bullets_point:after,
-.resume .resume_right .resume_education .bullets_point:after{
-
-content: "";
-position: absolute;
-top: 16px;
-left: -9.6px;
-height: 13px;
-background: #555555;; 
-} */
-
 
 .resume .resume_right .resume_work  .bullets_point:after,
 .resume .resume_right .resume_education .bullets_point:after{
