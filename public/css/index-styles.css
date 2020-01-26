@@ -1,7 +1,12 @@
-body {
-    overflow-x: hidden;
-    overflow-y: none;
-  }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+} */
   /* #myContainer {
     width: 400vw;
     height: 400vh;
@@ -19,6 +24,15 @@ body {
     align-items: center;
   } */
   
+
+  /* body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+} */
+
+
   #myAnimation {
     display: flex;
     justify-content: center;
@@ -27,8 +41,10 @@ body {
     width: 100%;
     height: 100vh;
     left: 0 ;
-    background: #e61919;
-    animation: color 30s linear infinite;
+    background:rgb(162, 240, 241, 0.3);
+    background:  #a2f0f1;
+    /* background:  #2d999b; */
+    /* animation: color 30s linear infinite; */
     user-select: none;
     position: fixed;
     top: 0;
@@ -50,10 +66,18 @@ body {
   left: 0;
   }
 
+
+
+  .coco{
+    color: rgba(255,255,255,0.7);
+    animation: color 30s linear infinite;
+  }
+
   
   .logo {
     font: 300 150px Comfortaa;
-    color: #fff;
+    color: rgba(255,255,255,0.7);
+    color: #585c68;
     cursor: default;
   }
   .hint {
@@ -62,27 +86,25 @@ body {
     bottom: 10vh;
     width: 100vw;
     text-align: center;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
     font: 300 30px Comfortaa;
     /* color: teal; */
   }
 
 
   .box {
-    /* font-weight: 300;
-    margin: 30px auto 40px;
-    padding: 30px;
-    background: white;
-    color: black;
-    width: 400px; */
     background: goldenrod;
     margin: 30px auto;
     opacity: 0;
     visibility: hidden;
     transition: all 3000ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
     position: relative;
-    top: 35vh;
+    top: 26vh;
     height: 200px;
+    height: auto;
+
+
+    
   
   
     /* background: goldenrod;
@@ -122,70 +144,407 @@ body {
   } */
   @-moz-keyframes color {
     0% {
-      background: #e61919;
+      color: #e61919;
     }
     25% {
-      background: #7f19e6;
+      color: #7f19e6;
     }
     50% {
-      background: #19e5e6;
+      color: #19e5e6;
     }
     75% {
-      background: #80e619;
+      color: #80e619;
     }
     100% {
-      background: #e61919;
+      color: #e61919;
     }
   }
   @-webkit-keyframes color {
     0% {
-      background: #e61919;
+      color: #e61919;
     }
     25% {
-      background: #7f19e6;
+      color: #7f19e6;
     }
     50% {
-      background: #19e5e6;
+      color: #19e5e6;
     }
     75% {
-      background: #80e619;
+      color: #80e619;
     }
     100% {
-      background: #e61919;
+      color: #e61919;
     }
   }
   @-o-keyframes color {
     0% {
-      background: #e61919;
+      color: #e61919;
     }
     25% {
-      background: #7f19e6;
+      color: #7f19e6;
     }
     50% {
-      background: #19e5e6;
+      color: #19e5e6;
     }
     75% {
-      background: #80e619;
+      color: #80e619;
     }
     100% {
-      background: #e61919;
+      color: #e61919;
     }
   }
   @keyframes color {
     0% {
-      background: #e61919;
+      color: #e61919;
     }
     25% {
-      background: #7f19e6;
+      color: #7f19e6;
     }
     50% {
-      background: #19e5e6;
+      color: #19e5e6;
     }
     75% {
-      background: #80e619;
+      color: #80e619;
     }
     100% {
-      background: #e61919;
+      color: #e61919;
     }
   }
   
+
+
+  /* /////////////////////////////////////// */
+  /* /////////////////////////////////////// */
+  /* /////////////////////////////////////// */
+  /* /////////////////////////////////////// */
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+    
+}
+
+
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.resume{
+    width: 1000px;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    margin: 50px auto;
+    padding-top: 30vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 3000ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
+    position: relative;
+}
+
+.resume.open {
+    opacity: 1;
+    visibility: visible;
+    /* top: 0; */
+}
+.resume .resume_left{
+    width: 300px;
+    background: #a2f0f1; 
+}
+
+.resume .resume_left .resume_profile img{
+    width: 100%;
+    height: 100%;   
+}
+
+.resume .resume_left .resume_content{
+    padding: 0 25px;
+}
+
+.resume .title{
+    margin-bottom: 20px;
+}
+
+.resume .resume_left .bold{
+    color:  #212022;
+}
+
+.resume .resume_left .regular{
+     color:  #2d999b; 
+}
+
+.resume .resume_item{
+    padding: 25px 0;
+    border-bottom: 2px solid #8CAFD1; 
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child{
+    border-bottom: 0px;
+}
+
+.resume .resume_left ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resume .resume_left ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.resume .resume_left ul li .icon{
+    width: 40px;
+    height: 40px;
+    background:  #8CAFD1;
+    color:  #212022; 
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+
+}
+/* ////////////////////////////// */
+/* ////////////////////////////// */
+/* Stylings of All Icons on Page */
+/* ////////////////////////////// */
+/* ////////////////////////////// */
+.resume .icon img,
+.resume .resume_right .resume_hobby ul li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 50%; */
+}
+
+.resume .resume_left ul li .data{
+    color:  #212022;
+}
+
+.resume .resume_left .resume_skills ul li{
+    color:  #212022;
+    justify-content: space-between;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name{
+    width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #585c68;
+    position: relative;
+}
+.resume .resume_left .resume_skills ul li .skill_per{
+    width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:  #2d999b; 
+}
+.resume .resume_right{
+    width: 520px;
+    /* width: 800px; */
+    width: 600px;
+    background: #fff;
+    padding: 25px;
+}
+
+.resume .resume_right .bold{
+  color: #2d999b; 
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.resume .resume_right  ul li{
+    position: relative;
+}
+
+.resume .resume_right ul li .date{
+    font-size: 16px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info{
+    margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info{
+    margin-bottom: 0px;
+}
+
+/* All Circular bullet Points */
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 2px solid  #2d999b; 
+}
+
+/* Creates all the lines */
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after{
+content: "";
+position: absolute;
+top: 14px;
+Left: -21px;
+width: 2px;
+height: 115px;
+background:  #2d999b;
+}
+
+
+
+
+
+/* Sub Bullet Point: Circle*/
+.resume .resume_right .resume_work div ul li div ul li:before,
+.resume .resume_right .resume_education div ul li div ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid  #2d999b; 
+}
+
+
+/* Remove last line from after last child */
+.resume .resume_right .resume_work .bullets_point:last-child:after,
+.resume .resume_right .resume_education .bullets_point:last-child:after{
+    display: none;
+ }
+
+/* Sub Bullet Point: Lines*/
+/* .resume .resume_right .resume_work  .bullets_point:after,
+.resume .resume_right .resume_education .bullets_point:after{
+
+content: "";
+position: absolute;
+top: 16px;
+left: -9.6px;
+height: 13px;
+background: #555555;; 
+} */
+
+
+.resume .resume_right .resume_work  .bullets_point:after,
+.resume .resume_right .resume_education .bullets_point:after{
+
+display: none;
+}
+
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* Styling for Hobby Section */
+/* ////////////////////////// */
+/* ////////////////////////// */
+.resume .resume_right .resume_hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li{
+   width: 80px;
+   height: 80px;
+   border: 2px solid #2d999b;
+   border-radius: 50%;
+   position: relative;
+   color:  #212022;
+}
+
+
+ /* Horizontal green lines */
+ .resume .resume_right .resume_hobby ul li:before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: -79px;
+    width: 78px;
+    height: 2px;
+    background:  #2d999b;
+    /* background: yellow; */
+ }
+
+ .resume .resume_right .resume_hobby ul li:last-child:before{
+    display: none;
+ }
+
+ /* Work & Edu Sections Scrollable */
+ #work::-webkit-scrollbar,
+ #edu::-webkit-scrollbar{
+    display: none;
+  }
+#work, #edu{
+    width: 100%;
+    height: 230px;
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+
+
+#work:hover,
+#edu:hover{ 
+    animation: shake 275ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(.5deg); }
+    50% { transform: rotate(-.5deg); }
+    100% { transform: rotate(0.5deg); }
+  }
+ 
+.link{color:#555555;}
+.link:hover { color: #2d999b; }
+
+/* //////////////////////////////////// */
+/* ///// Header & footer Styling /// */
+/* //////////////////////////////////// */
+
+.headerContainer, .footerContainer{
+    /* background: #a2f0f1;  */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    color: #a2f0f1;
+}

@@ -1,15 +1,15 @@
 
 var x = document.getElementsByClassName("content");
-(function (){ 
-    // Function Logic Here.
-    console.log("We are here") 
-    // fadeDivInAndOut()
-    })();
+// (function (){ 
+//     // Function Logic Here.
+//     console.log("We are here") 
+//     // fadeDivInAndOut()
+//     })();
 
 
-if (document.querySelector(".box").style.display == 'block') { 
-    alert('this Element is block'); 
-  }
+// if (document.querySelector(".box").style.display == 'block') { 
+//     alert('this Element is block'); 
+//   }
 
 
 function scrollUp() {
@@ -29,9 +29,8 @@ function scrollUp() {
       }
     }
 
-   
-    // fadeDivInAndOut()
-    toggleEntrance();
+// Toggle the Resume Visibility
+    resumeFader();
 
 
   }
@@ -52,7 +51,7 @@ function scrollUp() {
     }
 
 
-    toggleEntrance();
+    resumeFader();
   }
 
 
@@ -85,9 +84,9 @@ function scrollUp() {
 
  // 
 
-  function toggleEntrance() {
+  function resumeFader() {
       console.log("something new")
-     var box = document.getElementById('box');
+     var box = document.getElementById('boxer');
       box.classList.toggle('open');
       console.log('even fired!');
   }

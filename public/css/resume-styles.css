@@ -14,6 +14,8 @@ body{
     line-height: 22px;
     color: #555555;
 }
+
+
 .bold{
     font-weight: 700;
     font-size: 20px;
@@ -299,7 +301,7 @@ display: none;
   }
  
 .link{color:#555555;}
-.link:hover { color: #2d999b;; }
+.link:hover { color: #2d999b; }
 
 /* //////////////////////////////////// */
 /* ///// Header & footer Styling /// */
