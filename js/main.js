@@ -38,7 +38,7 @@ function getViewport() {
 
 
 
-function scrollUp() {
+function animationScroller() {
     var animationHeight = myAnimation.offsetHeight;
 
 
