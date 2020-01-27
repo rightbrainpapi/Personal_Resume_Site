@@ -9,7 +9,8 @@
 var viewPortWidth;
 var viewPortHeight;
 var myAnimation = document.getElementById("myAnimation"); 
-
+var cv = document.getElementById('resume');
+var hint = document.getElementById("hinter");
 
 function getViewport() {
     // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
@@ -39,8 +40,7 @@ function getViewport() {
 
 function scrollUp() {
     var animationHeight = myAnimation.offsetHeight;
-    var cv = document.getElementById('resume');
-    var hint = document.getElementById("hinter");
+
 
     // alert(animationHeight);
     console.log(`myanimation height: ${animationHeight}`)
@@ -87,30 +87,6 @@ function scrollUp() {
     };
   }
 
-// Check if element is 100
-// if element is 100 
-//      set var pos = 0
-//      check if pos is 100
-//      if (pos == 100)
-//          [] clearInterval which is to say stop
-//          [] return
-//      else pos is less than 100
-//          [] pos++; 
-//              element.style.height = pos + '%'
-//          [] return
-
-
-// Check if element is 30
-// if element is 30
-//      set var pos = 100
-//      check if pos is 30
-//      if (pos == 30)
-//          [] clearInterval which is to say stop
-//          [] return    
-//      else pos is greater than 30
-//          [] pos--;
-//              element.style.height = pos + '%'
-//          [] return
 
 ///////////////////////////////////////
 ///////////////////////////////////////
