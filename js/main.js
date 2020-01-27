@@ -56,7 +56,7 @@ function getViewport() {
 function animationScroller() {
     var animationHeight = myAnimation.offsetHeight;
     // Checking if heights are equal
-    if (viewPortHeight === animationHeight){
+    if ((viewPortHeight === animationHeight) || (viewPortHeight < animationHeight)){
         // SCROLL UP
         var pos = 100; // start scrolling with animation at 100 (100% of the screens vh)
         var id = setInterval(frame,15);
