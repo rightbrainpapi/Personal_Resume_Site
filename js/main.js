@@ -39,14 +39,13 @@ function getViewport() {
 
 function scrollUp() {
     var animationHeight = myAnimation.offsetHeight;
+    var cv = document.getElementById('resume');
+    var hint = document.getElementById("hinter");
+
     // alert(animationHeight);
     console.log(`myanimation height: ${animationHeight}`)
     console.log(`viewport height: ${viewPortHeight}`)
-    if (viewPortHeight == animationHeight){
-        // if height is 100 
-        // 
-        // togglingDiv() 
-        console.log("we in")  
+    if (viewPortHeight === animationHeight){
         var pos = 100;
         var id = setInterval(frame,5);
         function frame() {
@@ -60,11 +59,15 @@ function scrollUp() {
         }
 
         // Toggle the Resume Visibility
-        resumeFader();
-        enterFader();
+        // resumeFader();
+        // enterFader();
+
+
+ 
+        elementsToggler(cv, hint);
     }
-    else if (viewPortHeight !== animationHeight) {
-        alert("doing somethingelse")
+    else if (viewPortHeight > animationHeight) {
+        alert("doing something else");
         var pos = 0;
         var id = setInterval(frame, 10);
         function frame() {
@@ -74,16 +77,14 @@ function scrollUp() {
             pos++; 
             myAnimation.style.height = pos + '%'; 
             myAnimation.style.height = pos + '%'; 
-          }
-        }
-    
-    
-        resumeFader();
-        enterFader();
+          };
+        };
+
+        elementsToggler(cv, hint);
     }
     else{
         alert("do Nothing")
-    }
+    };
   }
 
 // Check if element is 100
@@ -113,27 +114,19 @@ function scrollUp() {
 
 ///////////////////////////////////////
 ///////////////////////////////////////
-//////////////resumeFader//////////////
+////////////elementsToggler////////////
 ///////////////////////////////////////
 ///////////////////////////////////////
-  function resumeFader() {
-      console.log("something new")
-     var box = document.getElementById('boxer');
-      box.classList.toggle('open');
-      console.log('even fired!');
-  }
 
+  function elementsToggler(ele1, ele2) {
 
-///////////////////////////////////////
-///////////////////////////////////////
-//////////////resumeFader//////////////
-///////////////////////////////////////
-///////////////////////////////////////
-function enterFader() {
-    console.log("We Are in the EnterFader")
-   var hint = document.getElementById("hinter")
-    hint.classList.toggle('close');
+    // Opens Element 1: Toggles Opacity 1 and visibility visibile 
+   console.log("something new")
+    ele1.classList.toggle('open');
+
+    // Closes Element 2: Toggles Opacity 0 and visibility hidden 
     console.log('even fired!');
+    ele2.classList.toggle('close'); 
 }
 
 
