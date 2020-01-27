@@ -1,9 +1,10 @@
 // IFFY Function
-// (function (){ 
-//     // Function Logic Here.
-//     console.log("We are here") 
-//     // fadeDivInAndOut()
-//     })();
+(function (){ 
+    // Function Logic Here.
+    console.log("We are here") 
+    // fadeDivInAndOut()
+    getViewport()
+    })();
 
 var viewPortWidth;
 var viewPortHeight;
@@ -37,53 +38,53 @@ function getViewport() {
 
 
 function scrollUp() {
-    // if (viewPortHeight ){
+    var animationHeight = myAnimation.offsetHeight;
+    // alert(animationHeight);
+    console.log(`myanimation: ${animationHeight}`)
+    console.log(`viewport: ${viewPortHeight}`)
+    if (viewPortHeight == animationHeight){
+        // if height is 100 
+        // 
+        // togglingDiv() 
+        console.log("we in")  
+        var pos = 100;
+        var id = setInterval(frame,5);
+        function frame() {
+        if (pos == 10) {
+            clearInterval(id);
+        } 
+        else {
+            pos--; 
+            myAnimation.style.height = pos + 'vh';
+        }
+        }
 
-    // }
-
-    // if height is 100 
-    // 
-    // togglingDiv() 
-    console.log("we in")  
-    var pos = 100;
-    var id = setInterval(frame,5);
-    function frame() {
-      if (pos == 10) {
-        clearInterval(id);
-      } 
-      else {
-        pos--; 
-        myAnimation.style.height = pos + 'vh';
-      }
+        // Toggle the Resume Visibility
+        resumeFader();
+        enterFader();
     }
-
-// Toggle the Resume Visibility
-    resumeFader();
-    enterFader();
-
-
-  }
-
-  function closering() {
-    var elem = document.getElementById("myAnimation");   
-    var pos = 0;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (pos == 100) {
-        clearInterval(id);
-      } else {
-        pos++; 
-        elem.style.height = pos + '%'; 
-        elem.style.height = pos + '%'; 
-      }
+    else if (viewPortHeight !== animationHeight) {
+        alert("doing somethingelse")
+        var pos = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (pos == 100) {
+            clearInterval(id);
+          } else {
+            pos++; 
+            myAnimation.style.height = pos + '%'; 
+            myAnimation.style.height = pos + '%'; 
+          }
+        }
+    
+    
+        resumeFader();
+        enterFader();
     }
-
-
-    resumeFader();
-    enterFader();
+    else{
+        alert("do Nothing")
+    }
   }
-
-
 
 // Check if element is 100
 // if element is 100 
