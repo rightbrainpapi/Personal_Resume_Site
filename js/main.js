@@ -40,8 +40,8 @@ function getViewport() {
 function scrollUp() {
     var animationHeight = myAnimation.offsetHeight;
     // alert(animationHeight);
-    console.log(`myanimation: ${animationHeight}`)
-    console.log(`viewport: ${viewPortHeight}`)
+    console.log(`myanimation height: ${animationHeight}`)
+    console.log(`viewport height: ${viewPortHeight}`)
     if (viewPortHeight == animationHeight){
         // if height is 100 
         // 
