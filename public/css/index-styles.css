@@ -15,84 +15,55 @@ body{
     color: #555555;
     
 }
-/* *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-} */
-  /* #myContainer {
-    width: 400vw;
-    height: 400vh;
-    position: relative;
-    background: yellow;
-  } */
-  /* #myAnimation {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: red;
-    align-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  
-
-  /* body{
-    background: #585c68;
-    font-size: 14px;
-    line-height: 22px;
-    color: #555555;
-} */
-
 
   #myAnimation {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
     width: 100%;
     height: 100%;
     left: 0 ;
-    background:rgb(162, 240, 241, 0.3);
     background:  #a2f0f1;
-    /* background:  #2d999b; */
     /* animation: color 30s linear infinite; */
     user-select: none;
     position: fixed;
     top: 0;
     z-index: 3;
     font-size: 2vw;
-    /* display: none; */
 
-
-      /* Set rules to fill background */
-  /* min-height: 100%;
-  min-width: 1024px; */
-	
-  /* Set up proportionate scaling */
-  /* width: 100%;
-  height: auto; */
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
+  .logoContainer{
+      /* background: teal; */
+      width: 35%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .landingTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10% 0;
+    /* background-color: rgba(33, 33, 33, .3); */
+  }
 
 
   .coco{
     color: rgba(255,255,255,0.7);
     animation: color 30s linear infinite;
+    /* background: teal; */
   }
 
   
   .logo {
     font: 300 Comfortaa;
-    color: rgba(255,255,255,0.7);
     color: #585c68;
     cursor: default;
   }
@@ -117,37 +88,7 @@ body{
     visibility: hidden;
   }
 
-
-  /* .box {
-    background: goldenrod;
-    margin: 30px auto;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 3000ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
-    position: relative;
-    top: 26vh;
-    height: 200px;
-    height: auto;  
-}
-.box.open {
-    opacity: 1;
-    visibility: visible;
-} */
-
-
-
-
-
-/* 
-  .content {
-    padding: 30px;
-    position: relative;
-    top: 20vh;
-    height: 200px;
-    font: 16px Ubuntu;
-    display: block;
- 
-  } */
+/* This Changes word Brain */
   @-moz-keyframes color {
     0% {
       color: #e61919;
