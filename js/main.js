@@ -4,11 +4,13 @@
 //     console.log("We are here") 
 //     // fadeDivInAndOut()
 //     })();
-function getViewport() {
 
-    var viewPortWidth;
-    var viewPortHeight;
-   
+var viewPortWidth;
+var viewPortHeight;
+var myAnimation = document.getElementById("myAnimation"); 
+
+
+function getViewport() {
     // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
     if (typeof window.innerWidth != 'undefined') {
       viewPortWidth = window.innerWidth,
@@ -35,9 +37,14 @@ function getViewport() {
 
 
 function scrollUp() {
+    // if (viewPortHeight ){
+
+    // }
+
+    // if height is 100 
+    // 
     // togglingDiv() 
-    console.log("we in")
-    var elem = document.getElementById("myAnimation");   
+    console.log("we in")  
     var pos = 100;
     var id = setInterval(frame,5);
     function frame() {
@@ -46,7 +53,7 @@ function scrollUp() {
       } 
       else {
         pos--; 
-        elem.style.height = pos + 'vh';
+        myAnimation.style.height = pos + 'vh';
       }
     }
 
