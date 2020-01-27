@@ -1,16 +1,27 @@
-// IFFY Function
+/////////////////////////////
+///////IFFE Initializer//////
+/////////////////////////////
 (function (){ 
-    // Function Logic Here.
-    console.log("We are here") 
-    // fadeDivInAndOut()
     getViewport()
     })();
+
+/////////////////////////////
+///////Global Variables//////
+/////////////////////////////
 
 var viewPortWidth;
 var viewPortHeight;
 var myAnimation = document.getElementById("myAnimation"); 
 var cv = document.getElementById('resume');
 var hint = document.getElementById("hinter");
+
+
+
+///////////////////////////////////////
+///////////////////////////////////////
+//////////////getViewport//////////////
+///////////////////////////////////////
+///////////////////////////////////////
 
 function getViewport() {
     // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
@@ -36,54 +47,50 @@ function getViewport() {
    }
 
 
-
+////////////////////////////////////////
+////////////////////////////////////////
+////////////animationScroller///////////
+////////////////////////////////////////
+////////////////////////////////////////
 
 function animationScroller() {
     var animationHeight = myAnimation.offsetHeight;
-
-
-    // alert(animationHeight);
-    console.log(`myanimation height: ${animationHeight}`)
-    console.log(`viewport height: ${viewPortHeight}`)
+    // Checking if heights are equal
     if (viewPortHeight === animationHeight){
-        var pos = 100;
-        var id = setInterval(frame,5);
+        // SCROLL UP
+        var pos = 100; // start scrolling with animation at 100 (100% of the screens vh)
+        var id = setInterval(frame,15);
         function frame() {
         if (pos == 10) {
-            clearInterval(id);
+            clearInterval(id); // once pos is equal to 10 stop the scrolling
         } 
         else {
-            pos--; 
-            myAnimation.style.height = pos + 'vh';
+            pos--;  // subtract 1 from pos until pos is equal to 10
+            myAnimation.style.height = pos + '%';
         }
         }
 
-        // Toggle the Resume Visibility
-        // resumeFader();
-        // enterFader();
-
-
- 
+        // Toggling the visibility of the resume and the enter hint
         elementsToggler(cv, hint);
     }
     else if (viewPortHeight > animationHeight) {
-        alert("doing something else");
-        var pos = 0;
+        // SCROLL DOWN
+        var pos = 0; // start scrolling with animation at 0 (0% of the screens vh)
         var id = setInterval(frame, 10);
         function frame() {
           if (pos == 100) {
-            clearInterval(id);
+            clearInterval(id); // once pos is equal to 100 stop the scrolling
           } else {
-            pos++; 
-            myAnimation.style.height = pos + '%'; 
+            pos++; // add 1 to pos until pos is equal to 100
             myAnimation.style.height = pos + '%'; 
           };
         };
 
+        // Toggling the visibility of the resume and the enter hint
         elementsToggler(cv, hint);
     }
     else{
-        alert("do Nothing")
+        // Do nothing
     };
   }
 
@@ -97,11 +104,9 @@ function animationScroller() {
   function elementsToggler(ele1, ele2) {
 
     // Opens Element 1: Toggles Opacity 1 and visibility visibile 
-   console.log("something new")
     ele1.classList.toggle('open');
 
     // Closes Element 2: Toggles Opacity 0 and visibility hidden 
-    console.log('even fired!');
     ele2.classList.toggle('close'); 
 }
 
