@@ -40,9 +40,9 @@ body{
 
   .logoContainer{
       /* background: teal; */
-      width: 35%;
+      width: 75%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
   }
 
   .landingTitle{
@@ -51,6 +51,7 @@ body{
     justify-content: center;
     text-align: center;
     margin: 10% 0;
+    font-size: 2vw;
     /* background-color: rgba(33, 33, 33, .3); */
   }
 
@@ -74,7 +75,7 @@ body{
     width: 100vw;
     text-align: center;
     color: rgba(255,255,255,0.7);
-    font: 300 30px Comfortaa;
+    font: 300 2.5vw Comfortaa;
     /* color: teal; */
 
     opacity: 1;
