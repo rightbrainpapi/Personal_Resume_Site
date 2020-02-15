@@ -13,6 +13,9 @@ body{
     font-size: 14px;
     line-height: 22px;
     color: #555555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -30,12 +33,15 @@ body{
 width: 1000px;
 height:auto;
 display:flex;
+justify-content: center;
 margin: 50px auto;
 }
+
 .resume .resume_left{
     width: 300px;
     background: #a2f0f1; 
 }
+
 
 .resume .resume_left .resume_profile img{
     width: 100%;
@@ -315,3 +321,123 @@ display: none;
     padding: 10px;
     color: #a2f0f1;
 }
+
+
+@media only screen and (max-width: 600px) {
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    body{
+        background: #585c68;
+        font-size: 10px;
+        line-height: 18px;
+        color: #555555;
+        align-content: center;
+    }
+    /* Fonts styles */
+    .bold{
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .semi_bold{
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+
+    /* Resume */
+    .resume{
+        width: 300px;
+        height:auto;
+        display:flex;
+        margin: 50px auto;
+        align-self: center;
+        }
+/* All Circular bullet Points */
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid  #2d999b; 
+}
+
+/* Creates all the lines */
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after{
+content: "";
+position: absolute;
+top: 14px;
+Left: -21px;
+width: 2px;
+height: 0px; /*removing the vertical lines instead */
+background:  #2d999b;
+}
+
+
+
+/* Sub Bullet Point: Circle*/
+.resume .resume_right .resume_work div ul li div ul li:before,
+.resume .resume_right .resume_education div ul li div ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    width: 7px;
+    height: 0px;
+     border-radius: 0%; /*making dashes instead */
+    border: 2px solid  #2d999b; 
+}
+
+
+/* Remove last line from after last child */
+.resume .resume_right .resume_work .bullets_point:last-child:after,
+.resume .resume_right .resume_education .bullets_point:last-child:after{
+    display: none;
+ }
+
+
+
+
+
+        /* Hobby Section */
+
+    .resume .resume_right .resume_hobby ul li{
+        width: 40px;
+        height: 40px;
+        border: 2px solid #2d999b;
+        border-radius: 50%;
+        position: relative;
+        color:  #212022;
+     }
+     .resume .icon img,
+     .resume .resume_right .resume_hobby ul li img {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         /* width: 50%; */
+     }
+    /* Horizontal green lines */
+    .resume .resume_right .resume_hobby ul li:before{
+        /* content: "";
+        position: absolute;
+        top: 35px;
+        right: -79px; */
+        width: 0px;
+        /* height: 2px; */
+        /* background:  #2d999b; */
+        /* background: yellow; */
+    }
+  }
+
