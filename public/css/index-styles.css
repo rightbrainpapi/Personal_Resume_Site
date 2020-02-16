@@ -205,11 +205,6 @@ body{
   
 }
 
-
-.contact-title{
-  display: none;
-}
-
 .resume.open {
     opacity: 1;
     visibility: visible;
@@ -615,9 +610,6 @@ display: none;
 
 }
 
-.contact-title{
-  display: block;
-}
 /* .skill_set{
   display: none;
 } */
