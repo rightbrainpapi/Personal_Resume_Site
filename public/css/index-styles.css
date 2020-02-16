@@ -206,6 +206,10 @@ body{
 }
 
 
+.contact-title{
+  display: none;
+}
+
 .resume.open {
     opacity: 1;
     visibility: visible;
@@ -478,6 +482,7 @@ display: none;
     color: #a2f0f1;
 }
 
+
 @media only screen and (max-width: 750px) {
   *{
       margin:0;
@@ -610,9 +615,9 @@ display: none;
 
 }
 
-/* #contact_info{
-  display: none;
-} */
+.contact-title{
+  display: block;
+}
 /* .skill_set{
   display: none;
 } */
