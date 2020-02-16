@@ -73,6 +73,11 @@
                                 <p class="bold">darnell simon</p>
                                 <p class="regular">Full-Stack Developer</p>
                             </div>
+                            <div class="title">
+                                <p class="bold" onclick="toggleInfo('contact_info')">Contact</p>
+                            </div> 
+
+                            <div  id="contact_info" class="toggle-content">
                             <ul>
                                 <li>
                                     <div class="icon"><img  src="./public/assets/icons/map-signs-solid.svg" aria-hidden="true"></div>
@@ -116,115 +121,127 @@
                                 </li>
                             </ul>
                         </div>
+
+                        </div>
+
+
                         <div class="resume_item resume_skills">
                             <!-- Resume Skills Section -->
-                            <div class="title">
-                                <p class="bold">skills</p>
+                            <div class="title" >
+                                <p class="bold" onclick="toggleInfo('skill_set')">skills</p>
                             </div>
-                            <ul>
-                                <li>
-                                    <div class="skill_name">
-                                        HTML5
-                                    </div>
-                                    <div class="skill_progress">
-                                        <span style="width:85%;"></span>
-                                    </div>
-                                    <div class="skill_per">85%</div>
-                                </li>
-                                <li>
-                                    <div class="skill_name">
-                                    CSS
-                                    </div>
-                                    <div class="skill_progress">
-                                        <span style="width:78%;"></span>
-                                    </div>
-                                    <div class="skill_per">78%</div>
-                                </li>
-                                <li>
-                                    <div class="skill_name">
-                                        JS
-                                    </div>
-                                    <div class="skill_progress">
-                                        <span style="width:70%;"></span>
-                                    </div>
-                                    <div class="skill_per">70%</div>
-                                </li>
-                                <li>
-                                    <div class="skill_name">
-                                        React
-                                    </div>
-                                    <div class="skill_progress">
-                                        <span style="width:80%;"></span>
-                                    </div>
-                                    <div class="skill_per">80%</div>
-                                </li>
-                                <li>
-                                    <div class="skill_name">
-                                        NodeJS
-                                    </div>
-                                    <div class="skill_progress">
-                                        <span style="width:80%;"></span>
-                                    </div>
-                                    <div class="skill_per">80%</div>
-                                </li>
-                            </ul>
-        
+
+                            <div id="skill_set" class="toggle-content">
+                                <ul >
+                                    <li>
+                                        <div class="skill_name">
+                                            HTML5
+                                        </div>
+                                        <div class="skill_progress">
+                                            <span style="width:85%;"></span>
+                                        </div>
+                                        <div class="skill_per">85%</div>
+                                    </li>
+                                    <li>
+                                        <div class="skill_name">
+                                        CSS
+                                        </div>
+                                        <div class="skill_progress">
+                                            <span style="width:78%;"></span>
+                                        </div>
+                                        <div class="skill_per">78%</div>
+                                    </li>
+                                    <li>
+                                        <div class="skill_name">
+                                            JS
+                                        </div>
+                                        <div class="skill_progress">
+                                            <span style="width:70%;"></span>
+                                        </div>
+                                        <div class="skill_per">70%</div>
+                                    </li>
+                                    <li>
+                                        <div class="skill_name">
+                                            React
+                                        </div>
+                                        <div class="skill_progress">
+                                            <span style="width:80%;"></span>
+                                        </div>
+                                        <div class="skill_per">80%</div>
+                                    </li>
+                                    <li>
+                                        <div class="skill_name">
+                                            NodeJS
+                                        </div>
+                                        <div class="skill_progress">
+                                            <span style="width:80%;"></span>
+                                        </div>
+                                        <div class="skill_per">80%</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
+
                         <!-- Resume Social Section -->
                         <div class="resume_item resume_social">
                             <div class="title">
-                                <p class="bold">social</p>
+                                <p class="bold" onclick="toggleInfo('social_accounts')">social</p>
                             </div> 
-                            <ul>
+
+                            <div id="social_accounts" class="toggle-content">
+                                <ul>
+                
+                                    <li>
+                                        <div class="icon"> 
+                                            <img src="./public/assets/icons/linkedin-brands.svg" alt="">
+                                                <!-- <i class="fab fa-linkedin" aria-hidden="true"></i> -->
+                                            
+                                            
+                                        </div>
+                                        <div class="data">
+                                            <a href="https://www.linkedin.com/in/darnellsimon/" style="color:#212022;text-decoration:none;">
+                                                <p class="semi_bold">
+                                                    Linkedin
+                                                </p>
+                                                <p>darnellsimon@linkedin</p>
+                                            </a>
+                                        
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="./public/assets/icons/github-square-brands.svg" alt="">
+                                            <!-- <i class="fab fa-github-square" aria-hidden="true"></i> -->
+                                        </div>
+                                        <div class="data">
+                                            <a href="https://github.com/rightbrainpapi" style="color:#212022;text-decoration:none;">
+                                                <p class="semi_bold">
+                                                    GitHub
+                                                </p>
+                                                <p>rightbrainpapi@github</p>
+                                            </a>
+                                        
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="./public/assets/icons/twitter-square-brands.svg" alt="">
+                                            <!-- <i class="fab fa-twitter-square" aria-hidden="true"></i> -->
+                                        </div>
+                                        <div class="data">
+                                            <a href="https://twitter.com/rightbrainpapi" style="color:#212022;text-decoration:none;">
+                                                <p class="semi_bold">
+                                                    Twitter
+                                                </p>
+                                                <p>rightbrainpapi@twitter</p>
+                                            </a>
             
-                                <li>
-                                    <div class="icon"> 
-                                        <img src="./public/assets/icons/linkedin-brands.svg" alt="">
-                                            <!-- <i class="fab fa-linkedin" aria-hidden="true"></i> -->
-                                        
-                                        
-                                    </div>
-                                    <div class="data">
-                                        <a href="https://www.linkedin.com/in/darnellsimon/" style="color:#212022;text-decoration:none;">
-                                            <p class="semi_bold">
-                                                Linkedin
-                                            </p>
-                                            <p>darnellsimon@linkedin</p>
-                                        </a>
-                                    
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <img src="./public/assets/icons/github-square-brands.svg" alt="">
-                                        <!-- <i class="fab fa-github-square" aria-hidden="true"></i> -->
-                                    </div>
-                                    <div class="data">
-                                        <a href="https://github.com/rightbrainpapi" style="color:#212022;text-decoration:none;">
-                                            <p class="semi_bold">
-                                                GitHub
-                                            </p>
-                                            <p>rightbrainpapi@github</p>
-                                        </a>
-                                    
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <img src="./public/assets/icons/twitter-square-brands.svg" alt="">
-                                        <!-- <i class="fab fa-twitter-square" aria-hidden="true"></i> -->
-                                    </div>
-                                    <div class="data">
-                                        <a href="https://twitter.com/rightbrainpapi" style="color:#212022;text-decoration:none;">
-                                            <p class="semi_bold">
-                                                Twitter
-                                            </p>
-                                            <p>rightbrainpapi@twitter</p>
-                                        </a>
-        
-                                    </div>
-                                </li>
-                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
                 </div>

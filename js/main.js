@@ -15,6 +15,9 @@ var myAnimation = document.getElementById("myAnimation");
 var cv = document.getElementById('resume');
 var hint = document.getElementById("hinter");
 
+var contact_info = document.getElementById("contact_info");
+// var skills = document.getElementById("skill_set");
+var skills = document.getElementById("skill_set");
 
 
 ///////////////////////////////////////
@@ -119,6 +122,39 @@ function animationScroller() {
 var year = new Date().getFullYear();
 var date = `Copyright &copy; ${year} | Rightbrainpapi.`;
 document.getElementsByClassName('footer')[0].innerHTML = date;
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+//////////////// Phone View ////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+
+// function willToggle (element){
+
+//   toggleInfo (element);
+
+// }
+
+
+// Toggle element visibility
+function toggleInfo(elem) {
+  // console.log(skills.target)
+  // console.log(contact_info.target)
+  // elem.classList.toggle('is-visible');
+  var elem = document.getElementById(elem);
+  var resume_content = document.getElementsByClassName("resume_content");
+   if(elem.style.display != "none"){
+    // resume_content.style.display ="flex";
+    elem.style.display = 'none';
+   }else{
+     
+    elem.style.display = 'block';
+   }
+};
+
+
 
 
 

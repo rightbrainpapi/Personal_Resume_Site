@@ -610,6 +610,33 @@ display: none;
 
 }
 
+/* #contact_info{
+  display: none;
+} */
+/* .skill_set{
+  display: none;
+} */
+/* #social_accounts{
+  display: none;
+} */
+
+.toggle-content {
+	display: none;
+}
+
+
+/* .resume .resume_left ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+
+.resume_left .resume_item{
+  padding: 15px 0;
+  border-bottom: 0px solid #8CAFD1; 
+  /* display: none; */
+}
+
 
   .resume .resume_right{
     width: 520px;
@@ -679,12 +706,12 @@ display: none;
       }
       /* Horizontal green lines */
       .resume .resume_right .resume_hobby ul li:before{
-        content: "";
+        /* content: "";
         position: absolute;
         top: 30px;
-        right: -74px;
-        width: 73px;
-        height: 2px;
+        right: -74px; */
+        width: 0px;
+        /* height: 2px; */
         /* background:  #2d999b; */
         /* background: yellow; */
       }
