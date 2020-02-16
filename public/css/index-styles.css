@@ -13,6 +13,11 @@ body{
     font-size: 14px;
     line-height: 22px;
     color: #555555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    
     
 }
 
@@ -180,12 +185,14 @@ body{
 
 
 .resume{
-    width: 1000px;
+    /* width: 1000px; */
     height:auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px auto;
+    align-self: center;
+    /* margin: 30px auto; */
+    
     top: 15vh;
     opacity: 0;
     visibility: hidden;
@@ -469,4 +476,189 @@ display: none;
     align-content: center;
     padding: 10px;
     color: #a2f0f1;
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+  *{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+      font-family: 'Montserrat', sans-serif;
+      /* background: #c3c5cc; */
+      /* width: 350px; */
+  }
+  
+  body{
+    width: auto;
+      background: #385fd1;
+      /* font-size: 10px;
+      line-height: 18px;
+      color: #555555;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+      /* max-width: 150px; */
+  }
+
+
+
+
+  #myAnimation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
+    left: 0 ;
+    background:  #a2f0f1;
+    /* animation: color 30s linear infinite; */
+    user-select: none;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    font-size: 2.5vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+ 
+  .landingTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10% 0;
+    font-size: 2.5vw;
+    /* background-color: rgba(33, 33, 33, .3); */
+  }
+
+
+  .coco{
+    color: rgba(255,255,255,0.7);
+    animation: color 30s linear infinite;
+    /* background: teal; */
+  }
+
+  
+  .logo {
+    font: 300 Comfortaa;
+    color: #585c68;
+    cursor: default;
+  }
+  .hint {
+    /* position: fixed;
+    z-index: 4;
+    bottom: 10vh;
+    width: 100vw;
+    text-align: center;
+    color: rgba(255,255,255,0.7); */
+    font: 300 4.5vw Comfortaa;
+    /* color: rgb(0, 128, 128, 0.7);
+
+    opacity: 1;
+    visibility: visible;
+    transition: all 3000ms cubic-bezier(0.335, 0.01, 0.03, 1.36); */
+    /* position: relative; */
+  }
+
+  /* Fonts styles */
+  .bold{
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+  }
+  .semi_bold{
+      font-weight: 500;
+      font-size: 12px;
+  }
+
+
+  /* Resume */
+  .resume{
+    width: 100%;
+  }
+
+  .resume .resume_left{
+    width: 300px;
+    background: #a2f0f1; 
+}
+
+  .resume .resume_right{
+    width: 520px;
+    /* width: 800px; */
+    width: 600px;
+    background: #fff;
+    /* padding: 25px; */
+  }
+
+
+    /* All Circular bullet Points */
+    .resume .resume_right .resume_work ul li:before,
+    .resume .resume_right .resume_education ul li:before{
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -25px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid  #2d999b; 
+    }
+    /* Creates all the lines */
+    .resume .resume_right .resume_work ul li:after,
+    .resume .resume_right .resume_education ul li:after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    Left: -21px;
+    width: 2px;
+    height: 0px; /*removing the vertical lines instead */
+    background:  #2d999b;
+    }
+    /* Sub Bullet Point: Circle*/
+    .resume .resume_right .resume_work div ul li div ul li:before,
+    .resume .resume_right .resume_education div ul li div ul li:before{
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -14px;
+      width: 7px;
+      height: 0px;
+      border-radius: 0%; /*making dashes instead */
+      border: 2px solid  #2d999b; 
+    }
+    /* Remove last line from after last child */
+    .resume .resume_right .resume_work .bullets_point:last-child:after,
+    .resume .resume_right .resume_education .bullets_point:last-child:after{
+      display: none;
+    }
+          /* Hobby Section */
+      .resume .resume_right .resume_hobby ul li{
+          width: 40px;
+          height: 40px;
+          border: 2px solid #2d999b;
+          border-radius: 50%;
+          position: relative;
+          color:  #212022;
+      }
+      .resume .icon img,
+      .resume .resume_right .resume_hobby ul li img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      /* Horizontal green lines */
+      .resume .resume_right .resume_hobby ul li:before{
+          width: 0px;
+      }
 }

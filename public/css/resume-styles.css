@@ -338,6 +338,9 @@ display: none;
         line-height: 18px;
         color: #555555;
         align-content: center;
+            /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
     }
     /* Fonts styles */
     .bold{
@@ -353,11 +356,10 @@ display: none;
 
     /* Resume */
     .resume{
-        width: 300px;
+        width: 50px;
         height:auto;
         display:flex;
         margin: 50px auto;
-        align-self: center;
         }
 /* All Circular bullet Points */
 .resume .resume_right .resume_work ul li:before,
