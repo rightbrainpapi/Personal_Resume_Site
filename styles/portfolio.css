@@ -77,15 +77,43 @@ nav li:nth-child(2) {
 	color: #ea8478;
 	font-size: 1.25rem;
 }
+
+#galleryContainer {
+	display: flex;
+	flex-direction: column;
+	background: crimson;
+	align-items: center;
+	width: 100%;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+	display: flex;
+	justify-content: space-between;
+	/* background: black; */
+	width: 100%;
+}
+
+.workItems {
+	width: 100%;
+}
+/* .oneItem {
+	justify-content: stretch;
+} */
 .gallery {
 	padding: 0 0 4rem 0;
 }
-.img-container {
+
+/* .workItems {
+	width: ;
+} */
+/* .img-container {
 	width: 100%;
 	height: 500px;
 	cursor: pointer;
 	overflow: hidden;
-}
+} */
 .img-container:hover .img-content-hover {
 	display: block;
 }
