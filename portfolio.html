@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="./public/assets/icons/fav-icon.png"
+		/>
 		<link rel="stylesheet" href="./styles/portfolio.css" />
 		<title>Portfolio</title>
 	</head>
@@ -23,7 +28,8 @@
 
 						<div class="navTabs">
 							<ul>
-								<li><a href="#" class="active">Work</a></li>
+								<li><a href="#personal">Personal</a></li>
+								<li><a href="#clients">Clients</a></li>
 								<li><a href="https://rightbrainpapi.com/">Resume</a></li>
 							</ul>
 						</div>
@@ -46,8 +52,8 @@
 				<div class="container">
 					<div id="galleryContainer" class="grid">
 						<!-- Three In A Row -->
-						<section class="section-1">
-							<div class=" workItems ">
+						<section id="personal" class="section-1">
+							<div class="workItems">
 								<figure class="img-container">
 									<a
 										href="https://rightbrainpapi.github.io/Real-Estate-React-Redux-/"
@@ -66,33 +72,39 @@
 							</div>
 							<div class=" workItems ">
 								<figure class="img-container">
-									<img src="https://source.unsplash.com/5VXH4RG88gc" />
-									<figcaption class="img-content">
-										<h2 class="title">Camera Film</h2>
-										<h3 class="category">Showcase</h3>
-									</figcaption>
-									<span class="img-content-hover">
-										<h2 class="title">Camera Film</h2>
-										<h3 class="category">Showcase</h3>
-									</span>
+									<a href="https://rightbrainpapi.github.io/1-Pig-Game/">
+										<img src="./public/assets/images/dice.png" />
+										<figcaption class="img-content">
+											<h2 class="title">Dice Game</h2>
+											<h3 class="category">Tech: HTML | CSS | JS</h3>
+										</figcaption>
+										<span class="img-content-hover">
+											<h2 class="title">Dice Game</h2>
+											<h3 class="category">Tech: HTML | CSS | JS</h3>
+										</span>
+									</a>
 								</figure>
 							</div>
 							<div class="workItems ">
 								<figure class="img-container">
-									<img src="https://source.unsplash.com/XtUd5SiX464" />
-									<figcaption class="img-content">
-										<h2 class="title">Coffee</h2>
-										<h3 class="category">Showcase</h3>
-									</figcaption>
-									<span class="img-content-hover">
-										<h2 class="title">Coffee</h2>
-										<h3 class="category">Showcase</h3>
-									</span>
+									<a
+										href="https://rightbrainpapi.github.io/hot-air-balloon-race-TAOP/"
+									>
+										<img src="./public/assets/images/hotairballoon.png" />
+										<figcaption class="img-content">
+											<h2 class="title">Movement Game</h2>
+											<h3 class="category">Tech: HTML | CSS | JS</h3>
+										</figcaption>
+										<span class="img-content-hover">
+											<h2 class="title">Movement Game</h2>
+											<h3 class="category">Tech: HTML | CSS | JS</h3>
+										</span>
+									</a>
 								</figure>
 							</div>
 						</section>
 						<!-- TWO In A Row -->
-						<section class="section-2">
+						<!-- <section class="section-2">
 							<div class="workItems">
 								<figure class="img-container">
 									<img src="https://source.unsplash.com/JYGnB9gTCls" />
@@ -119,16 +131,16 @@
 									</span>
 								</figure>
 							</div>
-						</section>
+						</section> -->
 						<!-- One In A Row -->
-						<section class="section-3">
+						<section id="clients" class="section-3">
 							<div class="workItems">
 								<figure class="img-container">
 									<a href="https://upwardcode.com/">
 										<img src="./public/assets/images/upward-code.png" />
 										<figcaption class="img-content">
 											<h2 class="title">Educational Tech Company</h2>
-											<h3 class="category">Tech: HTML CSS JS</h3>
+											<h3 class="category">Tech: HTML | CSS | JS</h3>
 										</figcaption>
 										<span class="img-content-hover">
 											<h2 class="title">Educational Tech Company</h2>
