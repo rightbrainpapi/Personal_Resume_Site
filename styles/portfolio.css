@@ -80,8 +80,9 @@ nav li:nth-child(2) {
 	margin: 0;
 }
 #highlight {
+	margin-top: 0;
 	color: #ea8478;
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 
 #galleryContainer {
@@ -203,6 +204,18 @@ footer {
 		-webkit-box-pack: right;
 		-ms-flex-pack: right;
 		justify-content: right;
+	}
+}
+
+@media screen and (max-width: 1224px) {
+	/* display column */
+	.section-1,
+	.section-2,
+	.section-3 {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
 	}
 }
 @media screen and (max-width: 1024px) {
